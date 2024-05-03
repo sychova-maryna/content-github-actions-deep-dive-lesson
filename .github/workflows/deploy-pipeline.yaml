@@ -60,8 +60,8 @@ jobs:
           body: New release for ${{ github.sha }}. 
           draft: false
           prerelease: false
-      - name: dowload artifact
-        uses: actions/dowload-artifact@v2
+      - name: download artifact
+        uses: actions/download-artifact@v2
         with:
           name: zipped-bundle
       - name: Upload the release asset
